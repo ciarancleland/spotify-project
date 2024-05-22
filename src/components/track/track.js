@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import React, {useCallback} from 'react';
 
 
 //Track object created. This will hold all necessary functions required for the playlist generator 

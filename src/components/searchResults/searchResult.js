@@ -1,9 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
+import Tracklist from '../trackList/trackList'
 
-
-const SearchResult = (props) => {
-    <div>
-        <h2>Search Results</h2>
-        
+/*Search Results component will present all sounds found, they will be created within a Tracklist element, 
+with an + function avaiable for user to add to a new playlist*/
+const SearchResults = (props) => {
+    return (
+    <div className='SearchResults'>
+        <h2>Results</h2>
+        <Tracklist tracks={props.searchResults} onAdd={props.onAdd}/>   
     </div>
-}
+    );
+};
+
+export default SearchResults
