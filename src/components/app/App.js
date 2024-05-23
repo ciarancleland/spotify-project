@@ -12,7 +12,10 @@ const App = () => {
   const [playlistTracks, setPlaylistTracks] = useState([]);
 
   const search = useCallback((term) => {
-    Spotify.search(term).then(setSearchResults);
+    Spotify.search(term).then(results => {
+      console.log('Search Results', results);
+      setSearchResults(results)
+    });
   }, []);
 
   const addTrack = useCallback(
@@ -38,6 +41,7 @@ const App = () => {
   const savePlaylist = useCallback(() => {
     const trackUris = playlistTracks.map((track) => track.uri);
     Spotify.savePlaylist(playlistName, trackUris).then(() => {
+      setPlaylistName('New Playlist')
       setPlaylistTracks([])
     });
   }, [playlistName, playlistTracks]);

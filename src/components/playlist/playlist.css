@@ -1,0 +1,25 @@
+div.Playlist {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    background-color: slategray;
+}
+
+button.Playlist-save {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+    align-self: center;
+    
+}
+
+#NewPlaylist {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 0;
+    
+}

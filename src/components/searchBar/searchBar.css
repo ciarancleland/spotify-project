@@ -1,0 +1,31 @@
+#SearchBar {
+    display: flex;
+    background-color: slategrey;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 150px
+    
+}
+
+button.SearchButton {
+    height: 50px;
+    width: 150px;
+    margin-left: 50px;
+    border-radius: 7.5px;
+}
+
+input{
+    width: 400px;
+    height: 30px;
+    margin-right: 50px;
+    background-color: green;
+
+}
+
+input::placeholder {
+    padding: 10px;
+    color: black;
+}

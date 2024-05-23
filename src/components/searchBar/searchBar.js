@@ -1,8 +1,8 @@
 import React, {useCallback, useState} from 'react';
+import './searchBar.css'
 
 
-
-function SearchBar(props) {
+const SearchBar = (props) => {
 
     const [term, setTerm] = useState('')
 
@@ -13,7 +13,7 @@ function SearchBar(props) {
 
     //search - will be used to access previously input property in hTC event.
     //useCallback - is a hook which will stop unnecessary re-renderings of the page, unless one of the dependancies has been altered the page will not request a re-render
-    const search = useCallback(() => {
+    const search = useCallback (() => {
         props.onSearch(term);
     }, [props.onSearch, term]);
     

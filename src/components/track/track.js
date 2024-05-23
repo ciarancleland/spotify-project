@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-
+import './track.css'
 
 //Track object created. This will hold all necessary functions required for the playlist generator 
 const Track = (props) => {

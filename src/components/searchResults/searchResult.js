@@ -1,4 +1,5 @@
 import React from 'react';
+import './searchResult.css'
 import Tracklist from '../trackList/trackList'
 
 /*Search Results component will present all sounds found, they will be created within a Tracklist element, 

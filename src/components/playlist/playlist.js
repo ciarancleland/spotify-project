@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
 import TrackList from '../trackList/trackList'
-
+import './playlist.css'
 /* Playlist function is goingt to allow the user to change the name of their created playlist.
 This will re-render each time the user changes the text in this targeted area. */
 const Playlist = (props) => {
@@ -18,7 +18,7 @@ have access to the remove function from this list. Finally there will be a Save 
 available to the user onSave will be developed further down the line*/
     return (
     <div className='Playlist'>
-        <input onChange={handleNameChange} defaultValue={'New Playlist'} />
+        <input onChange={handleNameChange} defaultValue={'New Playlist'} id='NewPlaylist'/>
         <TrackList 
             tracks={props.playlistTracks}
             isRemoval={true}
